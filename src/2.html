@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br8">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Faça um programa que receba o nome, o peso e a altura de alguém 
+        e calcule seu IMC
+    </h1>
+
+    <input type="text" id="nome" placeholder="informe seu nome"> <br>
+    <input type="text" id="peso" placeholder="informe seu peso"> <br>
+    <input type="text" id="altura" placeholder="informe sua altura"> <br>
+
+    <button onclick="calcular()"> Gerar seu IMC </button>
+
+    <input type="text" id="resultado" readonly>
+
+
+    <!---------- JavaScript ---------->
+    <script>
+
+        function calcular() {
+
+            //Entrada
+        let nome = document.getAnimations('nome').value ;
+        let peso = document.getElementById('peso').value ;
+        let altura = document.getElementById('altura').value;
+
+        //Processamento
+        let IMC = peso / (altura * altura);
+
+        //Saída
+        document.getElementById('resultado').value = IMC.toFixed(2)
+
+        }
+    
+    </script>
+
+</body>
+</html>
